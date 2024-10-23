@@ -1,0 +1,51 @@
+# Heart Disease Predictor Test Cases
+
+## Typical Cases
+
+1. Middle-aged adult with average health metrics:
+   - Number of major vessels colored (ca): 1
+   - ST depression (oldpeak): 1.0
+   - Age: 55
+   - Cholesterol (chol): 220
+   - Max heart rate (thalch): 140
+   - Thalassemia (thal): 3 (Normal)
+   - Resting blood pressure (trestbps): 130
+
+2. Younger adult with good health metrics:
+   - ca: 0
+   - oldpeak: 0.5
+   - Age: 35
+   - chol: 180
+   - thalch: 170
+   - thal: 3 (Normal)
+   - trestbps: 120
+
+3. Older adult with some concerning metrics:
+   - ca: 2
+   - oldpeak: 2.5
+   - Age: 68
+   - chol: 280
+   - thalch: 120
+   - thal: 6 (Fixed defect)
+   - trestbps: 150
+
+## Edge Cases
+
+4. Very young individual with concerning metrics:
+   - ca: 3
+   - oldpeak: 3.0
+   - Age: 25
+   - chol: 300
+   - thalch: 200
+   - thal: 7 (Reversible defect)
+   - trestbps: 160
+
+5. Very old individual with surprisingly good metrics:
+   - ca: 0
+   - oldpeak: 0.1
+   - Age: 85
+   - chol: 150
+   - thalch: 130
+   - thal: 3 (Normal)
+   - trestbps: 110
+
