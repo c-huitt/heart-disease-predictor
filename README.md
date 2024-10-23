@@ -53,7 +53,7 @@ The project follows the steps below:
     - Slope of the peak exercise ST segment (slope)
     - Number of major vessels colored by fluoroscopy (ca)
     - Thalassemia (thal)
-- **Target feature:** Presence of heart disease (0 = no, 1 = yes)
+- **Target feature:** Presence of heart disease (0 = no, 1 = yes) (num)
 #### Final Model
 - **Algorithm used:** XGBoost
     - After tuning the models, XGBoost was selected the final model due to it having a very strong ROC-AUC (.8462), 
@@ -157,6 +157,41 @@ For developers interested in running the project locally:
 - Integrate additional data for more robust predictions and insights.
 - Develop a secure web application for easy use by healthcare professionals with real patient data.
 - Improve UX/UI design for better user experience.
+
+## Data Glossary
+- id: patient ID
+- age: age in years
+- sex: sex
+     - 1 = male; 0 = female
+- database: which database it came from
+- cp: chest pain type
+     - Value 1: typical angina
+     - Value 2: atypical angina
+     - Value 3: non-anginal pain
+     - Value 4: asymptomatic
+- trestbps: resting blood pressure (in mm Hg on admission to the hospital)
+- chol: serum cholestoral in mg/dl
+- fbs: (fasting blood sugar > 120 mg/dl)
+     - 1 = true; 0 = false
+- restecg: resting electrocardiographic results
+     - Value 0: normal
+     - Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
+     - Value 2: showing probable or definite left ventricular hypertrophy by Estes' criteria
+- thalach: maximum heart rate achieved
+- exang: exercise induced angina
+     - 1 = yes; 0 = no
+- oldpeak = ST depression induced by exercise relative to rest
+- slope: the slope of the peak exercise ST segment
+     - Value 1: upsloping
+     - Value 2: flat
+     - Value 3: downsloping
+- ca: number of major vessels (0-3) colored by flourosopy
+- thal:
+     - 3 = normal; 6 = fixed defect; 7 = reversable defect
+- num: diagnosis of heart disease (angiographic disease status)
+     - Value 0: < 50% diameter narrowing
+     - Value 1: > 50% diameter narrowingb(in any major vessel: attributes 59 through 68 are vessels)
+
 
 ## Contact
 Chris Huitt - christopherhuitt@gmail.com
