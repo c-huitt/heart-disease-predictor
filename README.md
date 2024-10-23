@@ -37,7 +37,7 @@ The project follows the steps below:
 
 #### Initial Model Exploration
 - **Algorithms tested:** Logistic Regression, Random Forest, Gradient Boost, K-nearest Neighbors, SVM, XGBoost, LightGBM
-- **Input features:** _Please refer to Data section below for details on all input features_
+- **Input features:** _Please refer to Data Glossary section below for details on all input features_
     - ID
     - Age
     - Sex
